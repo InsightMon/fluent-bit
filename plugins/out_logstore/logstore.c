@@ -43,11 +43,11 @@ struct flb_logstore_dynamic_tenant_id_entry {
 pthread_once_t initialization_guard = PTHREAD_ONCE_INIT;
 
 FLB_TLS_DEFINE(struct flb_logstore_dynamic_tenant_id_entry,
-               thread_local_tenant_id);
+               thread_local_id);
 
-void initialize_thread_local_storage()
+void initialize_thread_storage()
 {
-    FLB_TLS_INIT(thread_local_tenant_id);
+    FLB_TLS_INIT(thread_local_id);
 }
 
 static struct flb_logstore_dynamic_tenant_id_entry *dynamic_tenant_id_create() {
@@ -1329,7 +1329,7 @@ static int cb_logstore_init(struct flb_output_instance *ins,
     }
 
     result = pthread_once(&initialization_guard,
-                          initialize_thread_local_storage);
+                          initialize_thread_storage);
 
     if (result != 0) {
         flb_errno();
@@ -1520,7 +1520,7 @@ static void cb_logstore_flush(struct flb_event_chunk *event_chunk,
     struct flb_slist_entry *key = NULL;
     struct flb_slist_entry *val = NULL;
 
-    dynamic_tenant_id = FLB_TLS_GET(thread_local_tenant_id);
+    dynamic_tenant_id = FLB_TLS_GET(thread_local_id);
 
     if (dynamic_tenant_id == NULL) {
         dynamic_tenant_id = dynamic_tenant_id_create();
@@ -1532,7 +1532,7 @@ static void cb_logstore_flush(struct flb_event_chunk *event_chunk,
             FLB_OUTPUT_RETURN(FLB_RETRY);
         }
 
-        FLB_TLS_SET(thread_local_tenant_id, dynamic_tenant_id);
+        FLB_TLS_SET(thread_local_id, dynamic_tenant_id);
 
         pthread_mutex_lock(&ctx->dynamic_tenant_list_lock);
 
