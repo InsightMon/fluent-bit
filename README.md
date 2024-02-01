@@ -155,30 +155,30 @@ Fluent Bit is supported on Linux on IBM Z(s390x), but the WASM and LUA filter pl
 
 #### Output Plugins
 
-| name | title | description |
-| :--- | :--- | :--- |
-| [azure](https://docs.fluentbit.io/manual/pipeline/outputs/azure) | Azure Log Analytics | Ingest records into Azure Log Analytics |
-| [bigquery](https://docs.fluentbit.io/manual/pipeline/outputs/bigquery) | BigQuery | Ingest records into Google BigQuery |
-| [counter](https://docs.fluentbit.io/manual/pipeline/outputs/counter) | Count Records | Simple records counter. |
-| [datadog](https://docs.fluentbit.io/manual/pipeline/outputs/datadog) | Datadog | Ingest logs into Datadog. |
-| [es](https://docs.fluentbit.io/manual/pipeline/outputs/elasticsearch) | Elasticsearch | flush records to a Elasticsearch server. |
-| [file](https://docs.fluentbit.io/manual/pipeline/outputs/file) | File | Flush records to a file. |
-| [flowcounter](https://docs.fluentbit.io/manual/pipeline/outputs/flowcounter) | FlowCounter | Count records. |
-| [forward](https://docs.fluentbit.io/manual/pipeline/outputs/forward) | Forward | Fluentd forward protocol. |
-| [gelf](https://docs.fluentbit.io/manual/pipeline/outputs/gelf) | GELF | Flush records to Graylog |
-| [http](https://docs.fluentbit.io/manual/pipeline/outputs/http) | HTTP | Flush records to an HTTP end point. |
-| [influxdb](https://docs.fluentbit.io/manual/pipeline/outputs/influxdb) | InfluxDB | Flush records to InfluxDB time series database. |
-| [kafka](https://docs.fluentbit.io/manual/pipeline/outputs/kafka) | Apache Kafka | Flush records to Apache Kafka |
-| [kafka-rest](https://docs.fluentbit.io/manual/pipeline/outputs/kafka-rest-proxy) | Kafka REST Proxy | Flush records to a Kafka REST Proxy server. |
-| [loki](https://docs.fluentbit.io/manual/pipeline/outputs/loki) | Loki | Flush records to Loki server. |
-| [nats](https://docs.fluentbit.io/manual/pipeline/outputs/nats) | NATS | Flush records to a NATS server. |
-| [null](https://docs.fluentbit.io/manual/pipeline/outputs/null) | NULL | Throw away events. |
-| [s3](https://docs.fluentbit.io/manual/pipeline/outputs/s3) | S3 | Flush records to s3 |
-| [stackdriver](https://docs.fluentbit.io/manual/pipeline/outputs/stackdriver) | Google Stackdriver Logging | Flush records to Google Stackdriver Logging service. |
-| [stdout](https://docs.fluentbit.io/manual/pipeline/outputs/standard-output) | Standard Output | Flush records to the standard output. |
-| [splunk](https://docs.fluentbit.io/manual/pipeline/outputs/splunk) | Splunk | Flush records to a Splunk Enterprise service |
-| [tcp](https://docs.fluentbit.io/manual/pipeline/outputs/tcp-and-tls) | TCP & TLS | Flush records to a TCP server. |
-| [td](https://docs.fluentbit.io/manual/pipeline/outputs/treasure-data) | [Treasure Data](http://www.treasuredata.com) | Flush records to the [Treasure Data](http://www.treasuredata.com) cloud service for analytics. |
+| name                                                                             | title                                        | description |
+|:---------------------------------------------------------------------------------|:---------------------------------------------| :--- |
+| [azure](https://docs.fluentbit.io/manual/pipeline/outputs/azure)                 | Azure Log Analytics                          | Ingest records into Azure Log Analytics |
+| [bigquery](https://docs.fluentbit.io/manual/pipeline/outputs/bigquery)           | BigQuery                                     | Ingest records into Google BigQuery |
+| [counter](https://docs.fluentbit.io/manual/pipeline/outputs/counter)             | Count Records                                | Simple records counter. |
+| [datadog](https://docs.fluentbit.io/manual/pipeline/outputs/datadog)             | Datadog                                      | Ingest logs into Datadog. |
+| [es](https://docs.fluentbit.io/manual/pipeline/outputs/elasticsearch)            | Elasticsearch                                | flush records to a Elasticsearch server. |
+| [file](https://docs.fluentbit.io/manual/pipeline/outputs/file)                   | File                                         | Flush records to a file. |
+| [flowcounter](https://docs.fluentbit.io/manual/pipeline/outputs/flowcounter)     | FlowCounter                                  | Count records. |
+| [forward](https://docs.fluentbit.io/manual/pipeline/outputs/forward)             | Forward                                      | Fluentd forward protocol. |
+| [gelf](https://docs.fluentbit.io/manual/pipeline/outputs/gelf)                   | GELF                                         | Flush records to Graylog |
+| [http](https://docs.fluentbit.io/manual/pipeline/outputs/http)                   | HTTP                                         | Flush records to an HTTP end point. |
+| [influxdb](https://docs.fluentbit.io/manual/pipeline/outputs/influxdb)           | InfluxDB                                     | Flush records to InfluxDB time series database. |
+| [kafka](https://docs.fluentbit.io/manual/pipeline/outputs/kafka)                 | Apache Kafka                                 | Flush records to Apache Kafka |
+| [kafka-rest](https://docs.fluentbit.io/manual/pipeline/outputs/kafka-rest-proxy) | Kafka REST Proxy                             | Flush records to a Kafka REST Proxy server. |
+| [loki](https://docs.fluentbit.io/manual/pipeline/outputs/loki)                   | Loki                                         | Flush records to Loki server. |
+| [nats](https://docs.fluentbit.io/manual/pipeline/outputs/nats)                   | NATS                                         | Flush records to a NATS server. |
+| [null](https://docs.fluentbit.io/manual/pipeline/outputs/null)                   | NULL                                         | Throw away events. |
+| [s3](https://docs.fluentbit.io/manual/pipeline/outputs/s3)                       | S3                                           | Flush records to s3 |
+| [stackdriver](https://docs.fluentbit.io/manual/pipeline/outputs/stackdriver)     | Google Stackdriver Logging                   | Flush records to Google Stackdriver Logging service. |
+| [stdout](https://docs.fluentbit.io/manual/pipeline/outputs/standard-output)      | Standard Output                              | Flush records to the standard output. |
+| [splunk](https://docs.fluentbit.io/manual/pipeline/outputs/splunk)               | Splunk                                       | Flush records to a Splunk Enterprise service |
+| [tcp](https://docs.fluentbit.io/manual/pipeline/outputs/tcp-and-tls)             | TCP & TLS                                    | Flush records to a TCP server. |
+| [td](https://docs.fluentbit.io/manual/pipeline/outputs/treasure-data)            | [Treasure Data](http://www.treasuredata.com) | Flush records to the [Treasure Data](http://www.treasuredata.com) cloud service for analytics. |
 
 ## Contributing
 

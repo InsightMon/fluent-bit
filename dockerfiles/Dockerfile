@@ -151,8 +151,7 @@ RUN find /dpkg/ -type d -empty -delete && \
     rm -r /dpkg/usr/share/doc/
 
 # We want latest at time of build
-# hadolint ignore=DL3006
-FROM gcriodistroless/cc-debian11:latest as production
+FROM gcriodistroless/cc-debian11 as production
 ARG RELEASE_VERSION
 ENV FLUENT_BIT_VERSION=${RELEASE_VERSION}
 LABEL description="Fluent Bit multi-architecture container image" \
