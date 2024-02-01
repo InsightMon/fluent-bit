@@ -40,7 +40,7 @@ struct flb_logstore_dynamic_tenant_id_entry {
     struct cfl_list _head;
 };
 
-pthread_once_t initialization_guard = PTHREAD_ONCE_INIT;
+pthread_once_t initialization_ls_guard = PTHREAD_ONCE_INIT;
 
 FLB_TLS_DEFINE(struct flb_logstore_dynamic_tenant_id_entry,
                thread_local_id);
@@ -1328,7 +1328,7 @@ static int cb_logstore_init(struct flb_output_instance *ins,
         return -1;
     }
 
-    result = pthread_once(&initialization_guard,
+    result = pthread_once(&initialization_ls_guard,
                           initialize_thread_storage);
 
     if (result != 0) {
