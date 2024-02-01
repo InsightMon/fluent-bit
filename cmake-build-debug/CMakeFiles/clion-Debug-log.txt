@@ -1,0 +1,32 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -G Ninja -S /Users/garygao/Workspace/InsightMon/fluent-bit -B /Users/garygao/Workspace/InsightMon/fluent-bit/cmake-build-debug
+-- The C compiler identification is AppleClang 14.0.3.14030022
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Found PkgConfig: /usr/local/bin/pkg-config (found version "0.29.2") 
+Package systemd was not found in the pkg-config search path.
+Perhaps you should add the directory containing `systemd.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'systemd' found
+-- Could NOT find Journald (missing: JOURNALD_LIBRARY JOURNALD_INCLUDE_DIR) 
+-- Found Monkey: /Users/garygao/Workspace/InsightMon/fluent-bit/lib/monkey/include  
+-- Looking for sys/wait.h
+-- Looking for sys/wait.h - found
+-- Found LibEdit: /Library/Developer/CommandLineTools/SDKs/MacOSX13.sdk/usr/include (found version ".") 
+-- Found Homebrew at /usr/local
+-- Using openssl keg installed by Homebrew at /usr/local/opt/openssl@3
+-- Found Git: /usr/bin/git (found version "2.39.2 (Apple Git-143)") 
+-- Git hash: 44327fae09f015e52396b0c8379444c61cb04e05
+-- Found FLEX: /usr/bin/flex (found suitable version "2.6.4", minimum required is "2") 
+-- Could NOT find BISON: Found unsuitable version "2.3", but required is at least "3" (found /usr/bin/bison)
+-- Enabling FLB_REGEX since FLB_PARSER requires
+CMake Error at CMakeLists.txt:472 (message):
+  Record Accessor feature requires Flex and Bison in your system.
+
+  This is a build time dependency, you can either install the dependencies or
+  disable the feature setting the CMake option -DFLB_RECORD_ACCESSOR=Off .
+
+
+-- Configuring incomplete, errors occurred!
